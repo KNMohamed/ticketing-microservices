@@ -1,9 +1,8 @@
-import express, { Application } from 'express';
-import { json } from 'body-parser';
+import express from 'express';
 import { currentUserRouter } from './routes/current-user';
 
-const app: Application = express();
-app.use(json());
+const app = express();
+app.use(express.json());
 app.use(currentUserRouter);
 
 app.listen(3000, () => {
