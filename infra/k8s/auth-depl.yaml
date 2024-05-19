@@ -17,8 +17,9 @@ spec:
           image: yourmaingotoguy/auth
           resources:
             limits:
-              memory: "256Mi"
-              cpu: "500m"
+              cpu: "100m"
+              memory: "30Mi"
+
 ---
 apiVersion: v1
 kind: Service
